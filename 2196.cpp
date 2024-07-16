@@ -35,10 +35,3 @@ public:
         return nullptr;
     }
 };
-
-
-int main(){
-    vector<vector<int>> vect = {{85,74,0},{38,82,0},{39,70,0},{82,85,0},{74,13,0},{13,39,0}};
-    TreeNode* node = createBinaryTree(vect);
-    return 0;
-}
