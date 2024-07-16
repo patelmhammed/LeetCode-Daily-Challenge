@@ -23,9 +23,9 @@ public:
             if (parentToChildMap[d[0]] == nullptr) parentToChildMap[d[0]] = new TreeNode(d[0]);
             TreeNode* node = (parentToChildMap[d[1]] == nullptr ? new TreeNode(d[1]) : parentToChildMap[d[1]]);
             if (d[2])
-                parentToChildMap[d[0]]->left = node;
+                parentToChildMap[d[0]] -> left = node;
             else
-                parentToChildMap[d[0]]->right = node;
+                parentToChildMap[d[0]] -> right = node;
             parentToChildMap[node->val] = node;
             isChildNode[d[1]] = true;
         }
